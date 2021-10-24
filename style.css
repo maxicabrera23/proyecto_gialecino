@@ -1,0 +1,220 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+body{
+    color: whitesmoke;
+ 
+    background-color: whitesmoke;
+    background-size:cover;
+}
+
+#container{
+    
+    display: grid;
+    grid-template-columns: repeat (3, 1fr);
+   /* gap: 1em;*/   
+   
+   background: rgb(0,135,104);
+   background: linear-gradient(49deg, rgba(0,135,104,0.8089419589953476) 0%, rgba(1,0,9,0.9297284758492802) 37%, rgba(1,0,9,0.9437734196695049) 54%, rgba(0,135,104,0.8566947679841117) 89%); 
+}
+
+#central{
+    
+    width: 99vw;
+    height: 100vh;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
+      ), url("fondos/colorful-wood-pattern-4k-abstract.jpg");
+    background-size: cover;
+    border-bottom: solid rgba(3, 253, 253, 0.205) 1px;
+    background-color:  rgba(49, 48, 48, 0.87);
+   
+}
+
+
+section, article, footer{
+     /*background-color:  rgba(49, 48, 48, 0.788);*/
+    
+}
+
+
+/* ---------------------------nav var---------------------------------------------*/
+
+nav{
+    
+    height: 60px;
+    grid-column: 1/4;
+    background: rgb(1,0,9);
+    background: linear-gradient(0deg, rgba(1,0,9,1) 40%, rgba(80,20,23,0.8819756668605161) 100%); 
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:solid rgba(253, 3, 3, 0.548) 1px;
+    
+}
+
+.sticky {
+	position:-webkit-sticky;
+	position: sticky;
+	top: 0;
+}
+nav div{    
+    font-family: 'Varela Round', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 50px;
+   
+}
+
+nav ul {
+    width: auto;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline;
+    
+}
+nav ul li a{
+    font-family: 'Quicksand', sans-serif;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    padding:15px;
+    margin-right: 10px;
+}
+nav ul li a:hover{
+    background-color: rgba(9, 134, 138, 0.555);
+    height: 100vh;
+    border-bottom:solid rgba(3, 253, 232, 0.548) 3px;
+    transition: all 0.2s ease-in;
+
+}
+nav ul li a:active{
+    background-color: rgba(255, 255, 255, 0.788);
+    color: black;
+    transition: all 0.2s ease-out;
+}
+#image{
+    border-radius: 100px;
+    height: 60px;
+}
+
+
+
+
+/*---------------------mision section central -----------------------------------------*/
+section {
+   
+    grid-column: span 3;
+    height: 600px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    align-content:center;
+   
+
+}
+
+div section div {
+    margin: 0 0 120px 80px; 
+    font-family: 'Varela Round', sans-serif;
+}
+
+div section div h3{
+    font-size: 100px;
+    box-shadow: 1px rgb(221, 220, 220);
+}
+
+div section div p{
+    margin-left: 50px;
+    font-size: 19px;
+    font-weight: bold;
+
+}
+
+/*--------------------- articles -----------------------------------------*/
+
+article{
+   /* margin: 0 0 0 20px;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 0 25px 0 25px;
+    grid-column: 1/2; 
+    height: 300px;
+   /* border-radius: 0 10px 0 10px;*/
+    margin: 30px ;
+    
+    /*background: rgba(48, 47, 47, 0.863);*/
+   /* background: rgb(1,0,9);
+    background: linear-gradient(0deg, rgba(1,0,9,1) 40%, rgba(53,106,75,0.6881554421414151) 100%); */
+    border-bottom: 1px solid rgba(0, 135, 103, 0.342); 
+    padding-bottom: 30px;
+}
+
+div article p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.text_article{
+    padding:20px;
+}
+
+/*--------------------- Footer -----------------------------------------*/
+
+footer{
+    height: 40vh;
+    grid-column: 1/4;
+    /*background-color: black;*/
+    background: rgb(1,0,9);
+    background: linear-gradient(0deg, rgba(1,0,9,1) 40%, rgba(80,20,23,0.8819756668605161) 100%); 
+    border-top:solid rgba(253, 3, 3, 0.548) 1px;
+    display: flex;
+    justify-content:space-evenly;
+    align-items:center;
+    
+   
+}
+
+ footer div{
+     
+     font-weight: bold;
+     display: flex;
+     justify-content:center;
+     align-items:center;
+     align-content: center;
+     flex-direction: column;
+     
+}
+#seguinos .info,
+#contactenos .info{
+     display: flex;
+     justify-content:center;
+     align-items:center;
+     text-decoration: none;
+     color: rgb(221, 220, 220);
+    }
+i{
+    margin-right:20px;
+}
+.titulo { 
+    margin-bottom:10px; 
+}
+
+iframe{
+    height: 30vh;
+    margin-left: 20px;
+    margin-top: 10px;
+}
