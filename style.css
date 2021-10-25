@@ -16,10 +16,8 @@ body{
     
     display: grid;
     grid-template-columns: repeat (3, 1fr);
-   /* gap: 1em;*/   
-   
-   background: rgb(0,135,104);
-   background: linear-gradient(49deg, rgba(0,135,104,0.8089419589953476) 0%, rgba(1,0,9,0.9297284758492802) 37%, rgba(1,0,9,0.9437734196695049) 54%, rgba(0,135,104,0.8566947679841117) 89%); 
+    background: rgb(0,135,104);
+    background: linear-gradient(49deg, rgba(0,135,104,0.8089419589953476) 0%, rgba(1,0,9,0.9297284758492802) 37%, rgba(1,0,9,0.9437734196695049) 54%, rgba(0,135,104,0.8566947679841117) 89%); 
 }
 
 #central{
@@ -37,17 +35,12 @@ body{
 }
 
 
-section, article, footer{
-     /*background-color:  rgba(49, 48, 48, 0.788);*/
-    
-}
-
 
 /* ---------------------------nav var---------------------------------------------*/
 
 nav{
     
-    height: 60px;
+    height: auto;
     grid-column: 1/4;
     background: rgb(1,0,9);
     background: linear-gradient(0deg, rgba(1,0,9,1) 40%, rgba(80,20,23,0.8819756668605161) 100%); 
@@ -101,6 +94,7 @@ nav ul li a:active{
     transition: all 0.2s ease-out;
 }
 #image{
+    margin-top: 5px;
     border-radius: 100px;
     height: 60px;
 }
@@ -143,7 +137,7 @@ div section div p{
 /*--------------------- articles -----------------------------------------*/
 
 article{
-   /* margin: 0 0 0 20px;*/
+   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -151,12 +145,7 @@ article{
     padding: 0 25px 0 25px;
     grid-column: 1/2; 
     height: 300px;
-   /* border-radius: 0 10px 0 10px;*/
     margin: 30px ;
-    
-    /*background: rgba(48, 47, 47, 0.863);*/
-   /* background: rgb(1,0,9);
-    background: linear-gradient(0deg, rgba(1,0,9,1) 40%, rgba(53,106,75,0.6881554421414151) 100%); */
     border-bottom: 1px solid rgba(0, 135, 103, 0.342); 
     padding-bottom: 30px;
 }
@@ -177,7 +166,6 @@ div article p {
 footer{
     height: 40vh;
     grid-column: 1/4;
-    /*background-color: black;*/
     background: rgb(1,0,9);
     background: linear-gradient(0deg, rgba(1,0,9,1) 40%, rgba(80,20,23,0.8819756668605161) 100%); 
     border-top:solid rgba(253, 3, 3, 0.548) 1px;
@@ -198,6 +186,12 @@ footer{
      flex-direction: column;
      
 }
+
+#info{
+    display: flex;
+    flex-direction: row;
+}
+
 #seguinos .info,
 #contactenos .info{
      display: flex;
@@ -205,6 +199,7 @@ footer{
      align-items:center;
      text-decoration: none;
      color: rgb(221, 220, 220);
+     margin-left:10vw;
     }
 i{
     margin-right:20px;
@@ -218,3 +213,153 @@ iframe{
     margin-left: 20px;
     margin-top: 10px;
 }
+
+
+
+/*------------------------------ tablets-------------------------------------------------*/
+@media all and (min-width:600px) and (max-width:1023px){ 
+   
+    nav{
+        width: 100vw;
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content:center;
+        align-items:center;
+        align-content: center;
+        
+    }
+  
+    
+    nav ul {
+        width:100vw;
+        list-style-type: none;
+        display:flex; 
+        flex-flow: row wrap;
+        justify-content:center;
+        align-items:center;
+    }
+    nav ul li{
+        display:flex; 
+       
+    }
+    nav ul li a{
+        font-size: 17px;
+        padding:10px 2px 10px 2px;
+        margin-right: 10px;
+    
+    }
+    #image{
+        
+        border-radius: 100px;
+        height: 60px;
+    }
+
+    nav ul li a:hover{
+       
+        height: 18px;
+       
+    }
+   
+/*---------------------mision section central -----------------------------------------*/
+#central{
+    
+    width: 100vw;
+    height: 100vh;
+   
+    
+}
+
+section {
+   margin: 0;
+    
+}
+
+/*--------------------- articles -----------------------------------------*/
+
+#ima1,
+#ima2,
+#ima3{
+    min-width: 10vw;
+    max-width: 50vw;
+    
+    min-height: 10vh;
+    max-height: 50vh;
+    
+}
+
+
+article{
+    padding: 0 10px 30px 10px;
+    margin: 5px;
+    
+}
+
+.text_article{
+    padding:15px;
+    width: 40vw;
+}
+
+/*--------------------- Footer -----------------------------------------*/
+
+footer{
+    width: 100vw;
+    justify-content:center;
+    
+}
+
+#mapa {
+     
+    width: 40vw;
+     
+}
+
+#info{
+    width: 40vw;
+    flex-direction: column;
+   
+}
+
+#seguinos .info,
+#contactenos .info{
+    margin-bottom: 5vh;
+}
+
+iframe{
+        height: 25vh;
+        width: 40vw;
+        
+        /*margin-left: 20px;
+        margin-top: 10px;*/
+}
+
+    /*
+i{
+    margin-right:20px;
+}
+.titulo { 
+    margin-bottom:10px; 
+}
+
+
+
+*/
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/*------------------------------ celus -------------------------------------------------*/
+@media all and (max-width:599px){ 
+    
+}
+
+
