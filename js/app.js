@@ -1,10 +1,12 @@
 let modal = document.querySelector('#modal');
-let imagenes = document.querySelectorAll('#galeria img')
-let modal_imagen = document.querySelector('#mostrar_modal')
-let cerrar = document.querySelector('#cerrar')
-let derecha = document.querySelector('#derecha')
-let izquierda = document.querySelector('#izquieda')
-let imagen_actual="";
+let imagenes = document.querySelectorAll('#galeria img');
+let modal_imagen = document.querySelector('#mostrar_modal');
+let cerrar = document.querySelector('#cerrar');
+/*
+let derecha = document.querySelector('#derecha');
+let izquierda = document.querySelector('#izquieda');
+*/
+
 
 /*mostra la imagen mas grande*/
 
@@ -31,3 +33,5 @@ derecha.addEventListener('click',() => {
     imagen_actual= document.querySelector('#mostrar_modal')
     console.log(imagen_actual.src);
 });*/
+
+
